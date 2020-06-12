@@ -1,0 +1,34 @@
+# generate the input by random numbers
+
+import string
+import random
+
+str1='its a monday'
+def split1(str1):
+    lst =[char for char in str1]
+    return lst
+lst= split1(str1)
+
+def join_string(lst):
+    str1=''.join(lst)
+    return str1
+    
+
+possibleCharacters = string.ascii_lowercase + string.digits + string.ascii_uppercase + ' ., !?;:'
+
+t=[]
+for i in range(len(str1)):
+    temp=random.choice(possibleCharacters)
+    t.append(temp)
+print(t)
+# str2 =split1(str1)
+temp=[]
+for j in range(len(str1)):    
+    while(t[j] != str1[j]):
+        t[j]=random.choice(possibleCharacters)
+        if t[j]==str1[j]:
+            temp.append(t[j])
+            print(temp)
+print
+print("matched string is:",temp)
+    
