@@ -1,0 +1,13 @@
+# Find words which are greater than given length k
+str1='its a monday guys'
+def leng_string(str1, k):
+    temp=[]
+    str2=str1.split(' ')
+    for i in str2:
+        lst=[char for char in i]
+        print(i)
+        if len(lst)>=k:
+            temp.append(i)
+    return temp
+k=4
+print("Length of string greater than {} is ".format(k),leng_string(str1,k))
