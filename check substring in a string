@@ -1,0 +1,10 @@
+#check substring in a string
+str2='its '
+
+def check(string, substring):
+    if string.find(substring)==-1:
+        return "No"
+    else:
+        return "Yes"
+    
+print(check(str1,str2))
