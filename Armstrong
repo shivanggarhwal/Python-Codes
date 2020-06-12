@@ -1,0 +1,14 @@
+#Armstrong number
+def Armstrong(n):
+    sum1=0
+    temp=n
+    l=[int(i) for i in str(n)]
+    length=len(l)
+    for i in l:
+        sum1=sum1 + (i**length)
+        print(sum1)
+    if n==sum1:
+        print('Yes it''s Armstrong')
+    else:
+        print('Not an Armstrong')
+Armstrong(1213)
