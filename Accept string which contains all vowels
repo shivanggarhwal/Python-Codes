@@ -1,0 +1,12 @@
+#accept string which contains all vowels
+
+def accpt_vowel(str1):
+    vowl=['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' ]
+    for i in str1:
+        if i in vowl:
+            pass
+        else:
+            print( 'not accepted')
+            break
+    
+accpt_vowel(str1)
