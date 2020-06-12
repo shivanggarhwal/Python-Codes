@@ -1,0 +1,9 @@
+#print even length words from string
+
+def print_even_str(str1):
+    break_str=str1.split(' ')
+    for i in range(len(break_str)):
+        if len(break_str[i])%2==0:
+            print(break_str[i])
+            
+print_even_str(str1)
