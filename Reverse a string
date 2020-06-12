@@ -1,0 +1,12 @@
+#Reverse words in string
+str1='its a thursday weekend is coming'
+
+def reverse1(str1):
+    words=str1.split(' ')
+    reverse_sentence=' '.join(reversed(words))
+    return reverse_sentence, words
+
+print(reverse1(str1))
+
+
+
