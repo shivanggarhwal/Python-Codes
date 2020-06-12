@@ -1,0 +1,16 @@
+# Slicing and rotating the string by 'd' elements
+str1='Tuesday'
+temp=str1[:2]
+str1=str1[2:]+temp
+str1
+
+
+def slice_rotate(str1, d):
+    temp=str1[:d]
+    str2=str1[2:]+temp
+    print("Backward rotation:",str2)
+    temp=str1[len(str1)-d:]
+    str2=temp +str1[:len(str1)-d]
+    print("Forward rotation:", str2)
+    
+slice_rotate(str1,3)
