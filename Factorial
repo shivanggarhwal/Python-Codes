@@ -1,0 +1,21 @@
+# Factoril
+def factorial(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+i=factorial(9)
+print(i)
+
+def factorial(n):
+    if n<0:
+        return 0
+    elif (n==0 or n==1):
+        return 1
+    if n>1:
+        fac=1
+        while(n>1):
+            fac=fac*(n)
+            n=n-1
+        return fac
+print(factorial(9)) 
