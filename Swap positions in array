@@ -1,0 +1,18 @@
+arr=[12,3,4,19,515,99]
+
+#Swap position
+def swapArr(arr,pos1,pos2):
+    temp=0
+    temp=arr[pos1]
+    arr[pos1]=arr[pos2]
+    arr[pos2]=temp
+    return arr
+
+print(swapArr(arr,1,0))
+
+def swapArr1(arr,pos1,pos2):
+    
+    arr[pos1],arr[pos2]=arr[pos1],arr[pos2]
+    return arr
+
+print(swapArr1(arr,1,0))
